@@ -1,19 +1,24 @@
 import { createPlan } from "./plan.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { addPlants, usePlants } from "./field.js"
+import { plantSeeds } from "./tractor.js"
+//this is to check the Sowing the field
+console.log(plantSeeds())
 
+//this is to check the creating seeds
+// const asparagusSeed = createAsparagus()
+// console.log(asparagusSeed)
 
+//this is to check harvest plan
+// const yearlyPlan = createPlan()
+// console.log(yearlyPlan)
 
-const asparagusSeed = createAsparagus()
-    //console.log(asparagusSeed)
-
-const yearlyPlan = createPlan()
-    //console.log(yearlyPlan)
-const createHops = {
-    plant: "hops",
-    height: 120,
-    output: 20
-}
-addPlants(createHops)
-const plantArrayCopy = usePlants()
-console.log(plantArrayCopy)
+//this is to check tilling the field
+// const createHops = {
+//     plant: "hops",
+//     height: 120,
+//     output: 20
+// }
+// addPlants(createHops)
+// const plantArrayCopy = usePlants()
+// console.log(plantArrayCopy)
