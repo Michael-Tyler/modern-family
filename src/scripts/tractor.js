@@ -8,11 +8,8 @@ import { createSunflower } from "./seeds/sunflower.js"
 import { createWheat } from "./seeds/wheat.js";
 
 export const plantSeeds = (plantingPlan) => {
-    const emptyArray = []
-    const yearlyPlan = createPlan()
-        //const asparagus = createAsparagus()
 
-    for (const planArray of yearlyPlan) {
+    for (const planArray of plantingPlan) {
         for (const plant of planArray) {
             if (plant === "Asparagus") {
                 addPlants(createAsparagus())
@@ -29,9 +26,4 @@ export const plantSeeds = (plantingPlan) => {
             }
         }
     }
-    return usePlants()
-
-
-
-
 }

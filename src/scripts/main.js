@@ -3,15 +3,17 @@ import { createAsparagus } from "./seeds/asparagus.js"
 import { addPlants, usePlants } from "./field.js"
 import { plantSeeds } from "./tractor.js"
 //this is to check the Sowing the field
-console.log(plantSeeds())
 
 //this is to check the creating seeds
 // const asparagusSeed = createAsparagus()
 // console.log(asparagusSeed)
 
 //this is to check harvest plan
-// const yearlyPlan = createPlan()
-// console.log(yearlyPlan)
+const yearlyPlan = createPlan()
+plantSeeds(yearlyPlan)
+const planted = usePlants()
+console.log(planted)
+    // console.log(yearlyPlan)
 
 //this is to check tilling the field
 // const createHops = {
