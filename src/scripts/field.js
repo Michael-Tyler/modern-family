@@ -1,8 +1,15 @@
 const plantArray = []
-export const addPlants = (seedObj) => {
-    const seedObject = plantArray.push(seedObj)
-}
-export const usePlants = () => {
-        return plantArray.slice()
+export const addPlants = (seeds) => {
+    const seedObject = []
+    if (Array.isArray(seeds)) {
+        for (const seed of seeds)
+            plantArray.push(seed)
+    } else {
+        plantArray.push(seeds)
     }
-    //console.log(plantArray)
+}
+
+
+export const usePlants = () => {
+    return plantArray.slice()
+}
