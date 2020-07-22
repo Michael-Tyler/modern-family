@@ -1,6 +1,6 @@
 export const createSunflower = () => {
     return {
-        plant: "Sunflower",
+        type: "Sunflower",
         height: 380,
         output: 3
     }
